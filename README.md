@@ -29,13 +29,13 @@ Cela démarrera le moteur de jeu 2D et vous pourrez commencer à développer vot
 
 Dans le fichier `src/main.ts`, vous pouvez voir un exemple d'utilisation du moteur. Voici ce que donne cet exemple : 
 
-https://github.com/RaphaelNJ/Simple2DEngine.ts/assets/102818995/90aa4237-b3fc-4e91-b8d9-1c79b25ee55f
+https://github.com/RaphaelNJ/Simple2DEngine.ts/assets/52333330/9a60699c-b3a1-4e09-9ff8-a3b7e5a3ae86
 
 Voici un exemple plus simple :
 
 ```typescript
 import * as engine from "./engine/engine";
-import google from '/google.png';
+import typescript from '/typescript.png';
 
 new engine.Engine(<HTMLCanvasElement>document.getElementById("canvas"), (delta: number, fps: number, engineInstance: engine.Engine) => {
   if (engineInstance.isLoading) { // vérifie si le jeu est en chargement
@@ -46,7 +46,7 @@ new engine.Engine(<HTMLCanvasElement>document.getElementById("canvas"), (delta: 
 
   engineInstance.DrawLine(0, 0, 50, 120, { a: 255, r: 255, g: 255, b: 255 });
 
-  engineInstance.DrawTexturedRectangle(100, 100, "google", {
+  engineInstance.DrawTexturedRectangle(100, 100, "typescript", {
     matrix: [
       [160, 0],
       [0, 90],
@@ -70,12 +70,12 @@ new engine.Engine(<HTMLCanvasElement>document.getElementById("canvas"), (delta: 
   160 * 3, // taille de la fenêtre en largeur
   120 * 3, // taille de la fenêtre en hauteur
   2, // taille des pixels
-  { google } // liste des images à charger
+  { typescript } // liste des images à charger
 );
 ```
 Ce code affichera :
 
-![preview](https://github.com/RaphaelNJ/Simple2DEngine.ts/assets/102818995/bfd0be09-80cb-4d4c-9499-f952221c5d84)
+![Screenshot from 2024-02-29 12-27-47](https://github.com/RaphaelNJ/Simple2DEngine.ts/assets/52333330/ea73fce5-2561-42e6-9c80-14ca870b8ca8)
 
 
 ## Documentation des fonctions
